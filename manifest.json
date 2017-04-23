@@ -1,0 +1,19 @@
+{
+  "name": "Adwords Remover",
+  "description": "Removes all manipulation from Google",
+  "version": "1.0",
+  "browser_action": {
+      "default_title": "Removes all manipulation from Google",
+      "default_icon": "icon.png",
+      "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://myposture.dk/*", "https://www.google.dk/*"],
+      "js": [
+        "myscript.js"
+      ]
+    }
+  ],
+  "manifest_version": 2
+}
